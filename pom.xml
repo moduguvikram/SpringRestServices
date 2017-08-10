@@ -51,7 +51,7 @@
 	</dependencies>
 	<build>
 		<finalName>SpringRestServices</finalName>
-		<plugins>
+	<!-- 	<plugins>
 			<plugin>
 				<executions>
 					<execution>
@@ -97,7 +97,7 @@
 				</configuration>
 
 			</plugin>
-		</plugins>
+		</plugins> -->
 	</build>
 
 
