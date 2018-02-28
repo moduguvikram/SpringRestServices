@@ -6,6 +6,11 @@ pipeline {
                 mvn clean
             }
         }
+        stage('Checkout') {
+            steps {
+                git checkout -b ${env.}
+            }
+        }
         stage('Build') { 
             steps {
                 mvn install
