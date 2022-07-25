@@ -37,5 +37,7 @@ jobs:
       - name: Step One
         uses: actions/checkout@v2
       - name: Step Two
-        run: apt-get -y install top 
+        run: |
+          sudo su - root
+          apt-get -y install top 
     
