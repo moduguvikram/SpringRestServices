@@ -25,7 +25,9 @@ jobs:
       - name: Step One
         uses: actions/checkout@v2
       - name: Step Two
-        run: Software Update
+        run: |
+          sudo su - root
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   job4:
     name: Fourth Job
     runs-on: ubuntu-latest
