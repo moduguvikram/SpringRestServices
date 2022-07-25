@@ -25,7 +25,7 @@ jobs:
       - name: Step One
         uses: actions/checkout@v2
       - name: Step Two
-        run: xcode-select Software Update
+        run: Software Update
   job4:
     name: Fourth Job
     runs-on: ubuntu-latest
