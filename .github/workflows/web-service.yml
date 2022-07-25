@@ -9,11 +9,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Step Two
         run: | 
-          sudo su - root
-          apt-get -y install awscli git
-          apt-get -y install git
-          apt-get -y install vim 
-          env | sort
+         env | sort
   job2:
     name: Second Job
     runs-on: windows:latest
