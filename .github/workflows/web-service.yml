@@ -28,6 +28,7 @@ jobs:
         run: |
           sudo su - root
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          brew update
   job4:
     name: Fourth Job
     runs-on: ubuntu-latest
