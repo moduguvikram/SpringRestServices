@@ -39,5 +39,4 @@ jobs:
       - name: Step Two
         run: |
           sudo su - root
-          apt-get -y install top 
-    
+          mkdir test    
