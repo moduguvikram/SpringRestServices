@@ -1,7 +1,7 @@
 name: Artifact
 on: [push]
 env:
-  ARTIFACT_NAME:  my-artifact
+  ARTIFACT_NAME:  SpringRestServices.war
 jobs:
   main:
     runs-on: ubuntu-latest
