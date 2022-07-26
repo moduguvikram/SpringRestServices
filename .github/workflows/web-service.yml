@@ -18,7 +18,21 @@ jobs:
         uses: actions/checkout@v2
       - name: Step Two
         run: | 
-         env | sort
+          echo "Accessing environment variables using shell syntax"
+          echo "1. $WORKSPACE_ENVIRONMENT_VARIABLE"
+          echo "2. $JOB_ENVIRONMENT_VARIABLE"
+          echo "3. $STEP_ENVIRONMENT_VARIABLE"
+          echo "4. $OVER_RIDE"
+          echo ""
+          echo "---------------------------------------------------------"
+          echo ""
+          echo "5. ${{ env.WORKSPACE_ENVIRONMENT_VARIABLE }}"
+          echo "6. ${{ env.JOB_ENVIRONMENT_VARIABLE }}"
+          echo "7. ${{ env.STEP_ENVIRONMENT_VARIABLE }}"
+          echo "8. ${{ env.OVER_RIDE }}"
+          echo ""
+          echo ""
+          env | sort
   windows:
     name: windows Job
     runs-on: windows-latest
