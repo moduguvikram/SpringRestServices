@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
-        useS: actions/Checkout@v2
+        uses: actions/Checkout@v2
       - name: Upload the artifact
-        useS: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: ${{ env.ARTIFACT_NAME }}
           path: ./target/SpringRestServices.war
