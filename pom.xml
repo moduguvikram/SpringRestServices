@@ -8,7 +8,7 @@
 	<name>SpringRestServices Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<properties>
-		<spring.version>3.0.5.RELEASE</spring.version>
+		<spring.version>6.0.15</spring.version>
 		<cargo.version>1.6.4</cargo.version>
 	</properties>
 
