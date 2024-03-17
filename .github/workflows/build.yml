@@ -19,4 +19,4 @@
           uses: actions/upload-artifact@v2
           with:
             name: spring-rest-services
-            path: spring-rest-services
+            path: ./
