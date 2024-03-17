@@ -1,0 +1,15 @@
+  name: Dependabot for Java
+
+  on:
+    schedule:
+      -cron: '/5 * * * *'
+
+  jobs:
+    dependabot:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Dependabot
+          uses: dependabot/dependabot-script@v1
+          with:
+            directory: '/'
+            package-manager: 'maven'
