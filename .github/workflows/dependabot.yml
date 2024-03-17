@@ -1,15 +1,6 @@
-  name: Dependabot for Java
-
-  on:
+version: 2
+updates:
+  - package-ecosystem: 'maven'
+    directory: "/"
     schedule:
-      - cron: '*/5 * * * *'
-
-  jobs:
-    dependabot:
-      runs-on: ubuntu-latest
-      steps:
-        - name: Dependabot
-          uses: dependabot/dependabot-script@v1
-          with:
-            directory: '/'
-            package-manager: 'maven'
+      interval: '*/5 * * * *'
