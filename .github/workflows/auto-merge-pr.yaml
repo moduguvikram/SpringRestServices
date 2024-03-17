@@ -1,7 +1,0 @@
-name: Auto Merge Owner PR 
-on: 
-  pull_request
-    types: [opened, reopened]
-jobs:
-
-  
