@@ -18,5 +18,5 @@
         - name: Build Docker Image
           uses: actions/upload-artifact@v2
           with:
-            name: SpringRestServices
+            name: spring-rest-services
             path: spring-rest-services

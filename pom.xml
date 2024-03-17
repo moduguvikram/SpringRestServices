@@ -32,7 +32,7 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>SpringRestServices</finalName>
+		<finalName>spring-rest-services</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
