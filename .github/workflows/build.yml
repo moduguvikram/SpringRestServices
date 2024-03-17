@@ -40,4 +40,4 @@
           with:
             name: my-web-app-image
             path: my-web-app.tar
-      if: github.ref.startsWith('refs/heads/feature/')
+      if: ${{ startsWith(github.ref, 'refs/heads/feature/') }}
