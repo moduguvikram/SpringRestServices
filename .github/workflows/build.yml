@@ -2,6 +2,7 @@
     push:
       branches:
         - master
+        - feature/*
   jobs:
     build:
       runs-on: ubuntu-latest
@@ -20,3 +21,23 @@
           with:
             name: spring-rest-services
             path: ./
+    deploy:
+      needs: build
+      runs-on: ubuntu-latest
+      steps:
+        - name: Archive Docker Image
+          uses: actions/upload-artifact@v2
+          with:
+            name: spring-rest-services
+            path: ./
+      if: github.ref == 'refs/heads/master'
+    feature-deploy:
+      needs: build
+      runs-on: ubuntu-latest
+      steps:
+        - name: Archive Docker Image
+          uses: actions/upload-artifact@v2
+          with:
+            name: my-web-app-image
+            path: my-web-app.tar
+      if: github.ref.startsWith('refs/heads/feature/')
